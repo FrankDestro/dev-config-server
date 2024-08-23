@@ -1,11 +1,12 @@
-server:
-    port: 8888
 spring:
-    application:
-        name: config-server
-    output:
-        ansi:
-            enabled: ALWAYS
+  application:
+    name: greeting-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
 greeting-service:
-    greeting: "Hola"
-    default-value: "World"
+  greeting: "Hola"
+  default-value: "Mundo"

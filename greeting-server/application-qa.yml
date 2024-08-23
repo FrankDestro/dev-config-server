@@ -1,0 +1,11 @@
+server:
+    port: 8888
+spring:
+    application:
+        name: config-server
+    output:
+        ansi:
+            enabled: ALWAYS
+greeting-service:
+    greeting: "Olá"
+    default-value: "Mundo"
